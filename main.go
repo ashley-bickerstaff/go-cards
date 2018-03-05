@@ -7,7 +7,11 @@ import (
 
 func main() {
 
-	fmt.Println(initDeck())
+	deck := initDeck()
+
+	for _, card := range deck {
+		fmt.Println(card)
+	}
 }
 
 func initDeck() []string {
